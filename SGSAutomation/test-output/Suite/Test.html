@@ -1,0 +1,174 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Dec 02 13:57:05 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>227 seconds (227366 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.SGS.Test.SignupTest.SignupPageWithoutsignUpTest()'><b>SignupPageWithoutsignUpTest</b><br>Test class: com.SGS.Test.SignupTest<br>Parameters: public void com.SGS.Test.SignupTest.SignupPageWithoutsignUpTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>33</td>
+<td>com.SGS.Test.SignupTest@6a6cb05c</td></tr>
+<tr>
+<td title='com.SGS.Test.LoginTest.LoginWithoutSignIn()'><b>LoginWithoutSignIn</b><br>Test class: com.SGS.Test.LoginTest<br>Parameters: public void com.SGS.Test.LoginTest.LoginWithoutSignIn(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.LoginTest@22555ebf</td></tr>
+<tr>
+<td title='com.SGS.Test.LoginTest.LoginWithWrongNumericEmail()'><b>LoginWithWrongNumericEmail</b><br>Test class: com.SGS.Test.LoginTest<br>Parameters: public void com.SGS.Test.LoginTest.LoginWithWrongNumericEmail(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.LoginTest@22555ebf</td></tr>
+<tr>
+<td title='com.SGS.Test.SignupTest.SignupPagewith_name_signupTest()'><b>SignupPagewith_name_signupTest</b><br>Test class: com.SGS.Test.SignupTest<br>Parameters: public void com.SGS.Test.SignupTest.SignupPagewith_name_signupTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.SignupTest@6a6cb05c</td></tr>
+<tr>
+<td title='com.SGS.Test.SignupTest.SignupPageWithoutNameTest()'><b>SignupPageWithoutNameTest</b><br>Test class: com.SGS.Test.SignupTest<br>Parameters: public void com.SGS.Test.SignupTest.SignupPageWithoutNameTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>9</td>
+<td>com.SGS.Test.SignupTest@6a6cb05c</td></tr>
+<tr>
+<td title='com.SGS.Test.LoginTest.Loginpage()'><b>Loginpage</b><br>Test class: com.SGS.Test.LoginTest<br>Parameters: public void com.SGS.Test.LoginTest.Loginpage(java.lang.reflect.Method)</td>
+<td></td>
+<td>15</td>
+<td>com.SGS.Test.LoginTest@22555ebf</td></tr>
+<tr>
+<td title='com.SGS.Test.LoginTest.LoginWithWrongNumericPassword()'><b>LoginWithWrongNumericPassword</b><br>Test class: com.SGS.Test.LoginTest<br>Parameters: public void com.SGS.Test.LoginTest.LoginWithWrongNumericPassword(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.LoginTest@22555ebf</td></tr>
+<tr>
+<td title='com.SGS.Test.SignupTest.SignupPageTest()'><b>SignupPageTest</b><br>Test class: com.SGS.Test.SignupTest<br>Parameters: public void com.SGS.Test.SignupTest.SignupPageTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>9</td>
+<td>com.SGS.Test.SignupTest@6a6cb05c</td></tr>
+<tr>
+<td title='com.SGS.Test.LoginTest.LoginWithoutPassword()'><b>LoginWithoutPassword</b><br>Test class: com.SGS.Test.LoginTest<br>Parameters: public void com.SGS.Test.LoginTest.LoginWithoutPassword(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.LoginTest@22555ebf</td></tr>
+<tr>
+<td title='com.SGS.Test.SignupTest.SignupPagewithoutConfirmPasswordTest()'><b>SignupPagewithoutConfirmPasswordTest</b><br>Test class: com.SGS.Test.SignupTest<br>Parameters: public void com.SGS.Test.SignupTest.SignupPagewithoutConfirmPasswordTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>6</td>
+<td>com.SGS.Test.SignupTest@6a6cb05c</td></tr>
+<tr>
+<td title='com.SGS.Test.LoginTest.LoginWithWrongAlphaNumericPassword()'><b>LoginWithWrongAlphaNumericPassword</b><br>Test class: com.SGS.Test.LoginTest<br>Parameters: public void com.SGS.Test.LoginTest.LoginWithWrongAlphaNumericPassword(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.LoginTest@22555ebf</td></tr>
+<tr>
+<td title='com.SGS.Test.SignupTest.SignupPagewithoutPasswordTest()'><b>SignupPagewithoutPasswordTest</b><br>Test class: com.SGS.Test.SignupTest<br>Parameters: public void com.SGS.Test.SignupTest.SignupPagewithoutPasswordTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>8</td>
+<td>com.SGS.Test.SignupTest@6a6cb05c</td></tr>
+<tr>
+<td title='com.SGS.Test.SignupTest.SignupPagewithoutEmailTest()'><b>SignupPagewithoutEmailTest</b><br>Test class: com.SGS.Test.SignupTest<br>Parameters: public void com.SGS.Test.SignupTest.SignupPagewithoutEmailTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.SignupTest@6a6cb05c</td></tr>
+<tr>
+<td title='com.SGS.Test.ProfileTest.PersonalizationTest()'><b>PersonalizationTest</b><br>Test class: com.SGS.Test.ProfileTest<br>Parameters: public void com.SGS.Test.ProfileTest.PersonalizationTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>41</td>
+<td>com.SGS.Test.ProfileTest@40a4337a</td></tr>
+<tr>
+<td title='com.SGS.Test.ProfileTest.TagTest()'><b>TagTest</b><br>Test class: com.SGS.Test.ProfileTest<br>Parameters: public void com.SGS.Test.ProfileTest.TagTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.ProfileTest@40a4337a</td></tr>
+<tr>
+<td title='com.SGS.Test.ProfileTest.ChangePasswordTest()'><b>ChangePasswordTest</b><br>Test class: com.SGS.Test.ProfileTest<br>Parameters: public void com.SGS.Test.ProfileTest.ChangePasswordTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.ProfileTest@40a4337a</td></tr>
+<tr>
+<td title='com.SGS.Test.ProfileTest.DevloperOptionTest()'><b>DevloperOptionTest</b><br>Test class: com.SGS.Test.ProfileTest<br>Parameters: public void com.SGS.Test.ProfileTest.DevloperOptionTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>3</td>
+<td>com.SGS.Test.ProfileTest@40a4337a</td></tr>
+<tr>
+<td title='com.SGS.Test.LoginTest.LoginWithoutId()'><b>LoginWithoutId</b><br>Test class: com.SGS.Test.LoginTest<br>Parameters: public void com.SGS.Test.LoginTest.LoginWithoutId(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.LoginTest@22555ebf</td></tr>
+<tr>
+<td title='com.SGS.Test.LoginTest.LoginWithWrongAlphaNumericEmailTest()'><b>LoginWithWrongAlphaNumericEmailTest</b><br>Test class: com.SGS.Test.LoginTest<br>Parameters: public void com.SGS.Test.LoginTest.LoginWithWrongAlphaNumericEmailTest(java.lang.reflect.Method)</td>
+<td></td>
+<td>5</td>
+<td>com.SGS.Test.LoginTest@22555ebf</td></tr>
+</table><p>
+</body>
+</html>
