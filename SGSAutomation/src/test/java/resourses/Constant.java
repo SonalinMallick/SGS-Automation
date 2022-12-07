@@ -82,7 +82,7 @@ public class Constant {
 	public static final String CREATE_TAG_XPATH= "//button[@id='createTagButton']";
 	public static final String TAG_NAME_XPATH= "//body/div[7]/div[2]/div[1]/div[2]/div[4]/div[1]/div[1]/div[2]/div[1]/div[1]/input[1]";
 	public static final String TAG_CHECKBOX_XPATH= "//button[@id='saveNewTagData']";
-	public static final String TAG_NAME="Automatio";
+	public static final String TAG_NAME="AutomationNN";
 	public static final String TAG_SAVE_XPATH="//button[@id='saveNewTagData']";
 	public static final String FREE_TEXT_XPATH= "//button[@id='saveNewTagData']";
 	public static final String ALLOW_MULTIPLE_VALUES_XPATH= "//button[@id='saveNewTagData']";
@@ -241,6 +241,8 @@ public class Constant {
 		public static final String DATAENTRY_LONG_TEXT_CANCEL_XPATH="//body/div[@id='list-questions']/div[@id='editPreviewQuestionPopup']/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/button[2]";
 		public static final String LONGTEXT_DELETE_XPATH="//body/div[@id='list-questions']/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/span[1]/span[5]/i[1]";
 		public static final String LONGTEXT_DELETE_QUESTIONS_XPATH="//body/div[@id='list-questions']/div[@id='deleteQuestion']/div[1]/div[1]/div[3]/button[1]";
+		public static final String LONGTEXT_IMAGE_VIDEO_OTHER_OFF_XPATH="//body/div[@id='list-questions']/div[@id='editPreviewQuestionPopup']/div[1]/div[1]/div[1]";
+		
 		//DATAENTRY MODULE: NUMBER
 	    public static final String DATAENTRY_NUMBER_XPATH="//body/div[@id='list-questions']/div[1]/div[2]/div[4]/img[1]";
 	    public static final String DATAENTRY_NUMBER_QUESTIONS_XPATH="//iframe[@id='question-verbiage_ifr']";
@@ -296,9 +298,18 @@ public class Constant {
 		public static final String DATAENTRY_PASSWORD_TITLE_XPATH="/html[1]/body[1]";
 		public static final String DATAENTRY_PASSWORD_ENTER_XPATH="//body/div[@id='list-questions']/div[@id='editPreviewQuestionPopup']/div[1]/div[1]/div[1]";
 		public static final String DATAENTRY_PASSWORD_ENTER="Subhra@12";
-		public static final String DATAENTRY_PASSWORD_SAVE_XPATH="//body/div[@id='list-questions']/div[@id='editPreviewQuestionPopup']/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/button[1]";
+		public static final String DATAENTRY_PASSWORD_SAVE_XPATH="//body/div[@id='list-questions']/div[@id='editPreviewQuestionPopup']/div[1]/div[1]/div[1]";
 		public static final String DATAENTRY_PASSWORD_CANCEL_XPATH="//body/div[@id='list-questions']/div[@id='editPreviewQuestionPopup']/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/button[2]";
-	//CHOICE MODULE:MULTIPLE CHOICE
+	
+		public static final String PASSWORD_TAG_XPATH="//body/div[@id='list-questions']/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div[2]/div[2]/span[1]/span[1]/i[1]";
+	    public static final String PASSWORD_ADD_TAG_XPATH="//button[@id='applyTag-questionLevel']";
+		public static final String PASSWORD_ADD_TAG_NONSELECTED_XPATH="//body/div[@id='applyTag-popup']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]";
+		public static final String PASSWORD_ADD_TAG_NONSELED_AUTOMATION_XPATH="//body/div[@id='applyTag-popup']/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]/label[1]/input[1]";
+		public static final String PASSWORD_ADD_TAG_NONSELECTED_AUTOMATION_APPLY_TAG_XPATH="//button[@id='applyTags']";
+		public static final String DATAENTRY_PASSWORD_ADD_TAG_NONSELECTED_AUTOMATION_CANCEL_TAG_XPATH="";
+		public static final String DATAENTRY_PASSWORD_ADD_TAG_NONSELECTED_AUTOMATION_CLOSE_XPATH="//body/div[@id='list-questions']/div[@id='questionLevelTags-modal']/div[1]/div[1]/div[3]/button[1]";
+		
+		//CHOICE MODULE:MULTIPLE CHOICE
 	public static final String CHOICE_MODULE_MULTIPLE_CHOICE_XPATH="//body/div[@id='list-questions']/div[1]/div[3]/div[1]/img[1]";
 	public static final String MULTIPLE_CHOICE_PASSWORD_DRAG_AND_DROP_XPATH="//small[contains(text(),'Drag & drop questions here.')]";
 	public static final String CHOICE_MODULE_MULTIPLE_CHOICE_TITLE_XPATH="/html[1]/body[1]";
@@ -496,7 +507,7 @@ public class Constant {
 	public static final String MATCHING_SET2_IMAGE1_XPATH="//body[1]/div[7]/div[14]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/form[1]/div[3]/div[1]/div[3]/div[1]/table[2]/tbody[1]/tr[1]/td[2]/a[1]/img[1]";
 	public static final String MATCHING_SET2_IMAGE2_XPATH="//body[1]/div[7]/div[14]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/form[1]/div[3]/div[1]/div[3]/div[1]/table[2]/tbody[1]/tr[2]/td[2]/a[1]/img[1]";
 	//GROUPS MODULE:QUESTIONS GROUP
-	public static final String GROUPS_QUESTIONS_MODULE_XPATH="//body/div[@id='list-questions']/div[1]/div[4]/div[1]/img[1]";
+	public static final String GROUPS_QUESTIONS_MODULE_XPATH="//body/div[@id='list-questions']/div[1]/div[5]/div[1]/img[1]";
 	
 	
 	public static final String COURTESY_QUESTIONS_SAVE_XPATH= "(//div[@class='saveAndCancelQuestion']//button[@onclick='WelcomeQuestion.saveWelcomeQuestion(this)'])[1]";

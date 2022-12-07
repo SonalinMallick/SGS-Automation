@@ -34,7 +34,7 @@ public class ProfileTest extends BaseTest{
 
 	ProfileTest() {
 		try {
-			writer = new FileWriter("E:\\sonalin_workspace\\SGS\\src\\test\\java\\resourses\\login.properties");
+			writer = new FileWriter("E:\\PROJECTS\\SGS-Automation\\SGSAutomation\\src\\test\\java\\resourses\\login.properties");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

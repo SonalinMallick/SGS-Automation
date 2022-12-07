@@ -3,17 +3,22 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SGS.Test.SurveyCreateDataEntryTest">
+      <class name="com.SGS.Test.SurveyCreateInteractiveTest">
         <methods>
-          <include name="ShortTextCopyTest" invocation-numbers="0"/>
+          <include name="matchingTest" invocation-numbers="0"/>
+          <include name="groupingTagTest" invocation-numbers="0"/>
+          <include name="questionGroupDeleteTest" invocation-numbers="0"/>
+          <include name="matchingDeleteTest" invocation-numbers="0"/>
           <include name="closeClass"/>
-          <include name="ShortTextTagTest" invocation-numbers="0"/>
-          <include name="ShortTextTest" invocation-numbers="0"/>
-          <include name="ShortTextDeleteTest" invocation-numbers="0"/>
+          <include name="rankingTest" invocation-numbers="0"/>
+          <include name="groupingCopyTest" invocation-numbers="0"/>
+          <include name="groupingTest" invocation-numbers="0"/>
+          <include name="groupingDeleteTest" invocation-numbers="0"/>
+          <include name="rankingDeleteTest" invocation-numbers="0"/>
           <include name="setupClass"/>
-          <include name="ShortTextLogicTest" invocation-numbers="0"/>
+          <include name="groupTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.SGS.Test.SurveyCreateDataEntryTest -->
+      </class> <!-- com.SGS.Test.SurveyCreateInteractiveTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

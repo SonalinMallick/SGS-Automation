@@ -36,7 +36,7 @@ public class SurveyCreateTest extends BaseTest {
 
 	SurveyCreateTest() {
 		try {
-			writer = new FileWriter("E:\\sonalin_workspace\\SGS\\src\\test\\java\\resourses\\login.properties");
+			writer = new FileWriter("E:\\PROJECTS\\SGS-Automation\\SGSAutomation\\src\\test\\java\\resourses\\login.properties");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -115,9 +115,6 @@ public class SurveyCreateTest extends BaseTest {
 		driver.switchTo().defaultContent();
 		if (explicitElementWait(SurveyCreateobj.save))
 			SurveyCreateobj.save.click();
-		SurveyCreateobj.welcomeDelete.click();
-		if (explicitElementWait(SurveyCreateobj.thankyouDelete))
-			SurveyCreateobj.thankyouDeleteQuestions.click();
 		
 		WebElement register_text = driver.findElement(By.xpath(Constant.AUTOMATION_FINAL_RESULT_XPATH));
 		Assert.assertEquals(register_text.getText(), "AUTOMATION");
@@ -514,155 +511,7 @@ public class SurveyCreateTest extends BaseTest {
 	}
 
 
-	// INTERACTIVE MODULE:GROUPING
-	@Test(priority = 37)
-	public void groupingTest(Method method) {
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		scrollDown();
-		Actions act = new Actions(driver);
-		act.dragAndDrop(SurveyCreateobj.groupingFrom, SurveyCreateobj.groupingTo).build().perform();
-		driver.switchTo().frame(SurveyCreateobj.iframegrouping);
-		SurveyCreateobj.iframegroupingTitle.sendKeys("hello");
-		driver.switchTo().defaultContent();
-		SurveyCreateobj.groupingChoices.sendKeys(Constant.GROUPING_CHOICES);
-		SurveyCreateobj.groupingChoices1.sendKeys(Constant.GROUPING_CHOICES1);
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		// SurveyCreateobj.groupingChoicesImage.click();
-		if (explicitElementWait(SurveyCreateobj.groupingChoicesImage))
-			SurveyCreateobj.groupingChoicesImage.click();
-		if (explicitElementWait(SurveyCreateobj.surveygamezGallery))
-			SurveyCreateobj.surveygamezGallery.click();
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		// SurveyCreateobj.surveygamezGallery.click();
-		if (explicitElementWait(SurveyCreateobj.groupingChoicesImage1))
-			SurveyCreateobj.groupingChoicesImage1.click();
-		// SurveyCreateobj.groupingChoicesImage1.click();
-		if (explicitElementWait(SurveyCreateobj.surveygamezGallery1))
-			SurveyCreateobj.surveygamezGallery1.click();
-		// spage.surveygamezGallery1.click();
-		SurveyCreateobj.groupingCollector.sendKeys(Constant.GROUPING_COLLECTORS);
-		SurveyCreateobj.groupingCollector1.sendKeys(Constant.GROUPING_COLLECTORS1);
-		if (explicitElementWait(SurveyCreateobj.groupingsave))
-			SurveyCreateobj.groupingsave.click();
-	}
 	
-	@Test(priority = 38)
-	public void groupingDeleteTest(Method method) {
-
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		movetoElement(SurveyCreateobj.welcomeLogo);
-		SurveyCreateobj.Delete.click();
-		SurveyCreateobj.DeleteQuestion.click();
-		
-		WebElement register_text = driver.findElement(By.xpath(Constant.AUTOMATION_FINAL_RESULT_XPATH));
-		Assert.assertEquals(register_text.getText(), "AUTOMATION");
-
-	}
-
-
-
-	@Test(priority = 39)
-	public void rankingTest(Method method) {
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		
-		scrollDown();
-		Actions act = new Actions(driver);
-		act.dragAndDrop(SurveyCreateobj.rankingFrom, SurveyCreateobj.rankingTo).build().perform();
-		driver.switchTo().frame(SurveyCreateobj.iframeranking);
-		SurveyCreateobj.rankingttitle.sendKeys("hello");
-		driver.switchTo().defaultContent();
-		SurveyCreateobj.groupingChoices.sendKeys(Constant.GROUPING_CHOICES);
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		SurveyCreateobj.groupingChoices1.sendKeys(Constant.GROUPING_CHOICES1);
-		SurveyCreateobj.imagevideoOtherContentOff.click();
-		if (explicitElementWait(SurveyCreateobj.groupingsave))
-			SurveyCreateobj.groupingsave.click();
-	}
-	
-	@Test(priority = 40)
-	public void rankingDeleteTest(Method method) {
-
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		movetoElement(SurveyCreateobj.welcomeLogo);
-		SurveyCreateobj.Delete.click();
-		SurveyCreateobj.DeleteQuestion.click();
-		
-		WebElement register_text = driver.findElement(By.xpath(Constant.AUTOMATION_FINAL_RESULT_XPATH));
-		Assert.assertEquals(register_text.getText(), "AUTOMATION");
-
-	}
-
-
-	@Test(priority = 41)
-	public void matchingTest(Method method) {
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		login();
-		SurveyCreateobj.createsurvey.click();
-		SurveyCreateobj.createsurveytitle.sendKeys(Constant.CREATE_TITLE_XPATH);
-		SurveyCreateobj.createbutton.click();
-		SurveyCreateobj.expand.click();
-		scrollDown();
-		Actions act = new Actions(driver);
-		act.dragAndDrop(SurveyCreateobj.matchingFrom, SurveyCreateobj.matchingTo).build().perform();
-		driver.switchTo().frame(SurveyCreateobj.iframematching);
-		SurveyCreateobj.rankingttitle.sendKeys("hello");
-		driver.switchTo().defaultContent();
-		SurveyCreateobj.matchingoptionset1first.sendKeys(Constant.GROUPING_CHOICES);
-		SurveyCreateobj.matchingoptionset1second.sendKeys(Constant.GROUPING_CHOICES1);
-		// SurveyCreateobj.groupingChoicesImage.click();
-		if (explicitElementWait(SurveyCreateobj.matchingoptionset1image1))
-			SurveyCreateobj.matchingoptionset1image1.click();
-		if (explicitElementWait(SurveyCreateobj.surveygamezGallery))
-			SurveyCreateobj.surveygamezGallery.click();
-		if (explicitElementWait(SurveyCreateobj.groupingChoicesImage1))
-			SurveyCreateobj.groupingChoicesImage1.click();
-		// SurveyCreateobj.groupingChoicesImage1.click();
-		if (explicitElementWait(SurveyCreateobj.surveygamezGallery1))
-			SurveyCreateobj.surveygamezGallery1.click();
-		
-		try {
-			Thread.sleep(10000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		// SurveyCreateobj.surveygamezGallery.click();
-		if (explicitElementWait(SurveyCreateobj.groupingChoicesImage1))
-			SurveyCreateobj.groupingChoicesImage1.click();
-		// SurveyCreateobj.groupingChoicesImage1.click();
-		if (explicitElementWait(SurveyCreateobj.surveygamezGallery1))
-			SurveyCreateobj.surveygamezGallery1.click();
-		SurveyCreateobj.save.click();
-	}
-	@Test(priority = 42)
-	public void matchingDeleteTest(Method method) {
-
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		movetoElement(SurveyCreateobj.welcomeLogo);
-		SurveyCreateobj.Delete.click();
-		SurveyCreateobj.DeleteQuestion.click();
-		
-		WebElement register_text = driver.findElement(By.xpath(Constant.AUTOMATION_FINAL_RESULT_XPATH));
-		Assert.assertEquals(register_text.getText(), "AUTOMATION");
-
-	}
-
-
 	
 	@Test(priority = 43)
 	public void createDuplicateAnexistingsurvey(Method method) {
@@ -736,110 +585,5 @@ public class SurveyCreateTest extends BaseTest {
 		
 	}
 
-	@Test(priority = 47)
-	public void pickfromothersurvey(Method method) {
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		login();
-		SurveyCreateobj.createsurvey.click();
-		SurveyCreateobj.pickFromOthersurvey.click();
-
-		SurveyCreateobj.pickFromOthersurveyTitle.sendKeys(Constant.DUPLICATE_OF_AN_EXITING_SURVEY_TITLE);
-		SurveyCreateobj.pickFromOthersurveyProceed.click();
-		SurveyCreateobj.pickFromOthersurveySelectSurvey.click();
-		SurveyCreateobj.pickFromOthersurveySelectSurveyAutomation.click();
-		movetoout();
-		SurveyCreateobj.SearchCriteriaClickToAddTag.click();
-		SurveyCreateobj.SearchCriteriaSelectNonSelectedTag.click();
-		SurveyCreateobj.pickFromOthersurveySelectnonSelectedAutomation.click();
-		SurveyCreateobj.pickFromOthersurveySelectnonSelectedAutomationAdd.click();
-		SurveyCreateobj.SearchCriteriaRetriveQuestions.click();
-
-		WebElement register_text = driver.findElement(By.xpath(Constant.CREATE_SURVEY_FINAL_RESULT));
-		Assert.assertEquals(register_text.getText(), "Enterprise");
-	}
-
-	@Test(priority = 48)
-	public void createAssessmentAutoScoredcreateTest(Method method) {
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-
-		SurveyCreateobj.createsurvey.click();
-		SurveyCreateobj.assessment.click();
-		SurveyCreateobj.assessmentTitle.sendKeys(Constant.DUPLICATE_OF_AN_EXITING_SURVEY_TITLE);
-		scrollDown();
-		SurveyCreateobj.assessmentCreate.click();
-		WebElement register_text = driver.findElement(By.xpath(Constant.CREATE_SURVEY_WELCOME_FINAL_RESULT));
-		Assert.assertEquals(register_text.getText(), "Enterprise");
-	}
-
-	@Test(priority = 49)
-	public void AssessmentAutoScoredCancelTest(Method method) {
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		SurveyCreateobj.createsurvey.click();
-		SurveyCreateobj.assessment.click();
-		SurveyCreateobj.assessmentTitle.sendKeys(Constant.DUPLICATE_OF_AN_EXITING_SURVEY_TITLE);
-		scrollDown();
-		SurveyCreateobj.assessmentCancel.click();
-		WebElement register_text = driver.findElement(By.xpath(Constant.CREATE_SURVEY_WELCOME_FINAL_RESULT));
-		Assert.assertEquals(register_text.getText(), "Enterprise");
-	}
-
-	@Test(priority = 50)
-	public void configureTest(Method method) {
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		login();
-		SurveyCreateobj.createsurveysearch.sendKeys(Constant.CREATE_TITLE_XPATH);
-		SurveyCreateobj.automation.click();
-		SurveyCreateobj.expand.click();
-		SurveyCreateobj.configuration.click();
-		SurveyCreateobj.secureDatabase.click();
-		SurveyCreateobj.saveGeneralSettins.click();
-
-		WebElement register_text = driver.findElement(By.xpath(Constant.CREATE_SURVEY_WELCOME_FINAL_RESULT));
-		Assert.assertEquals(register_text.getText(), "Enterprise");
-	}
-
-
-
 	
-	@Test(priority = 51)
-	public void pickfromassessmentTest(Method method) {
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		login();
-		SurveyCreateobj.createsurvey.click();
-		SurveyCreateobj.assessment.click();
-		scrollDown();
-
-		SurveyCreateobj.pickFromOthersurveyTitle.sendKeys(Constant.DUPLICATE_OF_AN_EXITING_SURVEY_TITLE);
-		SurveyCreateobj.pickFromOthersurveyProceed.click();
-		SurveyCreateobj.pickFromOthersurveySelectSurvey.click();
-		SurveyCreateobj.pickFromOthersurveySelectSurveyAutomation.click();
-		movetoout();
-		SurveyCreateobj.SearchCriteriaClickToAddTag.click();
-		SurveyCreateobj.SearchCriteriaSelectNonSelectedTag.click();
-		SurveyCreateobj.pickFromOthersurveySelectnonSelectedAutomation.click();
-		SurveyCreateobj.pickFromOthersurveySelectnonSelectedAutomationAdd.click();
-		SurveyCreateobj.SearchCriteriaRetriveQuestions.click();
-
-		WebElement register_text = driver.findElement(By.xpath(Constant.CREATE_SURVEY_FINAL_RESULT));
-		Assert.assertEquals(register_text.getText(), "Enterprise");
-	}
-
-	@Test(priority = 52)
-	public void createQBsTest(Method method) {
-		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
-		login();
-		SurveyCreateobj.createsurvey.click();
-		SurveyCreateobj.Duplicateanexistingsurvey.click();
-		SurveyCreateobj.DuplicateanexistingsurveyTitle.clear();
-		SurveyCreateobj.DuplicateanexistingsurveyTitle.sendKeys(Constant.DUPLICATE_OF_AN_EXITING_SURVEY_TITLE);
-		SurveyCreateobj.DuplicateanexistingSelectsurvey.click();
-		SelectAutomation();
-		scrollDown();
-		SurveyCreateobj.DuplicateanexistingCreateButton.click();
-
-		WebElement register_text = driver.findElement(By.xpath(Constant.CREATE_SURVEY_FINAL_RESULT));
-		Assert.assertEquals(register_text.getText(), "Enterprise");
-	}
-	
-
 }

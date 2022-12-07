@@ -4,13 +4,16 @@
  <listeners>
 		<listener class-name="resourses.TestListener" />
   </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="8" name="Test">
     <classes>
      <class name="com.SGS.Test.LoginTest"/> 
-     <class name="com.SGS.Test.SignupTest"/>
+     <class name="com.SGS.Test.SignupTest"/>    
        <class name="com.SGS.Test.ProfileTest"/>
         <class name="com.SGS.Test.SurveyCreateCourtesyTest"/>
- <!--    <class name="com.SGS.Test.SurveyCreateTest"/>   -->
+          <class name="com.SGS.Test.SurveyCreateDataEntryTest"/>  
+            <class name="com.SGS.Test.SurveyCreateChoiceTest"/> 
+             <class name="com.SGS.Test.SurveyCreateInteractiveTest"/>
+             <class name="com.SGS.Test.SurveyCreateGroupsTest"/>
 
     </classes>
   </test> <!-- Test -->

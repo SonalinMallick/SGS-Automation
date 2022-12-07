@@ -6,12 +6,61 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.SGS.Test.SurveyCreateInteractiveTest">
+        <methods>
+          <include name="matchingTest" invocation-numbers="0"/>
+          <include name="questionGroupDeleteTest" invocation-numbers="0"/>
+          <include name="matchingDeleteTest" invocation-numbers="0"/>
+          <include name="closeClass"/>
+          <include name="setupClass"/>
+          <include name="groupTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.SGS.Test.SurveyCreateInteractiveTest -->
+      <class name="com.SGS.Test.SurveyCreateChoiceTest">
+        <methods>
+          <include name="closeClass"/>
+          <include name="dropDownDeleteTest" invocation-numbers="0"/>
+          <include name="setupClass"/>
+        </methods>
+      </class> <!-- com.SGS.Test.SurveyCreateChoiceTest -->
       <class name="com.SGS.Test.ProfileTest">
         <methods>
           <include name="setupClass"/>
           <include name="DevloperOptionTest" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.SGS.Test.ProfileTest -->
+      <class name="com.SGS.Test.SurveyCreateGroupsTest">
+        <methods>
+          <include name="createQBsTest" invocation-numbers="0"/>
+          <include name="setupClass"/>
+          <include name="closeClass"/>
+          <include name="pickfromassessmentTest" invocation-numbers="0"/>
+          <include name="configureTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.SGS.Test.SurveyCreateGroupsTest -->
+      <class name="com.SGS.Test.SurveyCreateDataEntryTest">
+        <methods>
+          <include name="closeClass"/>
+          <include name="numberTagTest" invocation-numbers="0"/>
+          <include name="numberCopyTest" invocation-numbers="0"/>
+          <include name="PasswordTest" invocation-numbers="0"/>
+          <include name="numberTest" invocation-numbers="0"/>
+          <include name="uploadDeleteTest" invocation-numbers="0"/>
+          <include name="uploadTest" invocation-numbers="0"/>
+          <include name="dateTest" invocation-numbers="0"/>
+          <include name="numberDeleteTest" invocation-numbers="0"/>
+          <include name="numberLogicTest" invocation-numbers="0"/>
+          <include name="dateDeleteTest" invocation-numbers="0"/>
+          <include name="setupClass"/>
+        </methods>
+      </class> <!-- com.SGS.Test.SurveyCreateDataEntryTest -->
+      <class name="com.SGS.Test.SurveyCreateCourtesyTest">
+        <methods>
+          <include name="setupClass"/>
+          <include name="closeClass"/>
+          <include name="thankyouTagTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.SGS.Test.SurveyCreateCourtesyTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

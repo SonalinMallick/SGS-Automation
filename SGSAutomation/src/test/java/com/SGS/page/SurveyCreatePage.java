@@ -455,7 +455,7 @@ public class SurveyCreatePage {
 	public WebElement shortTextAddTagNonSelectedApply;
 	
 	
-	@FindBy(xpath = Constant.DATAENTRY_SHORT_TEXT_XPATH)
+	@FindBy(xpath = Constant.DATAENTRY_LONG_TEXT_XPATH)
 	public WebElement longTextFrom;
 	
 	@FindBy(xpath = Constant.DATAENTRY_SHORT_TEXT_DRAG_AND_DROP_XPATH)
@@ -579,6 +579,29 @@ public class SurveyCreatePage {
 	@FindBy(xpath = Constant.DATAENTRY_PASSWORD_ENTER_XPATH)
 	public WebElement dataentryPassword;
 	
+	@FindBy(xpath = Constant.DATAENTRY_PASSWORD_SAVE_XPATH)
+	public WebElement dataentryPasswordSave;
+	
+	@FindBy(xpath = Constant.PASSWORD_TAG_XPATH)
+	public WebElement passwordTag;
+	
+	@FindBy(xpath = Constant.PASSWORD_ADD_TAG_XPATH)
+	public WebElement passwordAddTag;
+	
+	@FindBy(xpath = Constant.PASSWORD_ADD_TAG_NONSELECTED_XPATH)
+	public WebElement passwordAddTagNonSelected;
+	
+	@FindBy(xpath = Constant.PASSWORD_ADD_TAG_NONSELED_AUTOMATION_XPATH)
+	public WebElement passwordAddTagNonSelectedAutomation;
+	
+	@FindBy(xpath = Constant.PASSWORD_ADD_TAG_NONSELECTED_AUTOMATION_APPLY_TAG_XPATH)
+	public WebElement passwordAddTagNonSelectedApply;
+	
+	@FindBy(xpath = Constant.DATAENTRY_PASSWORD_ADD_TAG_NONSELECTED_AUTOMATION_CLOSE_XPATH)
+	public WebElement passwordAddTagNonSelectedClose;
+	
+	
+	
 	@FindBy(xpath = Constant.DATAENTRY_LOCATION_XPATH)
 	public WebElement locationFrom;
 	
@@ -591,6 +614,9 @@ public class SurveyCreatePage {
 	@FindBy(xpath = Constant.DATAENTRY_LOCATION_TITLE_XPATH)
 	public WebElement locationttitle;
 	
+	@FindBy(xpath = Constant.DATAENTRY_LOCATION_SAVE_XPATH)
+	public WebElement locationSave;
+	
 	@FindBy(xpath = Constant.INTERACTIVE_RANKING_XPATH)
 	public WebElement rankingFrom;
 	
@@ -600,7 +626,9 @@ public class SurveyCreatePage {
 	@FindBy(xpath = Constant.INTERACTIVE_RANKING_TITLE_XPATH)
 	public WebElement rankingttitle;
 	
-
+	@FindBy(xpath = Constant.DATAENTRY_UPLOAD_SAVE_XPATH)
+	public WebElement uploadSave;
+	
 	@FindBy(xpath = Constant.INTERACTIVE_RANKING_IFRAME_XPATH)
 	public WebElement iframeranking;
 	
@@ -692,6 +720,20 @@ public class SurveyCreatePage {
 	
 	@FindBy(xpath = Constant.DROPDOWN_IAMAGE_VIDEO_OTHERCONTENT_OFF_XPATH)
 	public WebElement imagevideoOtherContentOff;
+	
+
+	@FindBy(xpath = Constant.GROUPS_QUESTIONS_MODULE_XPATH)
+	public WebElement questiongroupFrom;
+	
+	@FindBy(xpath = Constant.MULTIPLE_CHOICE_PASSWORD_DRAG_AND_DROP_XPATH)
+	public WebElement questiongroupTo;
+	
+	@FindBy(xpath = Constant.CHOICE_MODULE_MULTIPLE_CHOICE_TITLE_XPATH)
+	public WebElement questiongrouptitle;
+	
+	@FindBy(xpath = Constant.INTERACTIVE_MATCHING_IFRAME_XPATH)
+	public WebElement iframequestiongroupe;
+	
 	
 	
 	

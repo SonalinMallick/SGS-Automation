@@ -30,7 +30,7 @@ public class BaseTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		
 		try {
-			reader = new FileReader("E:\\sonalin_workspace\\SGS\\src\\test\\java\\resourses\\login.properties");
+			reader = new FileReader("E:\\PROJECTS\\SGS-Automation\\SGSAutomation\\src\\test\\java\\resourses\\login.properties");
 					
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

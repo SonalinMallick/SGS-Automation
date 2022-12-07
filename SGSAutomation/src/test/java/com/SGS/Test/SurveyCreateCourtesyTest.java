@@ -35,7 +35,7 @@ public void closeClass(ITestContext method) {
 
 SurveyCreateCourtesyTest() {
 	try {
-		writer = new FileWriter("E:\\sonalin_workspace\\SGS\\src\\test\\java\\resourses\\login.properties");
+		writer = new FileWriter("E:\\PROJECTS\\SGS-Automation\\SGSAutomation\\src\\test\\java\\resourses\\login.properties");
 	} catch (IOException e) {
 		e.printStackTrace();
 	}
@@ -255,7 +255,6 @@ public void thankyouTagTest(Method method) {
 	SurveyCreateobj.thankyouTag.click();
 	if (explicitElementWait(SurveyCreateobj.thankyouAddTag))
 		SurveyCreateobj.thankyouAddTag.click();
-	// spage.DuplicateanexistingWelcomeAddTag.click();
 	SurveyCreateobj.thankyouAddTagNonSelected.click();
 	SurveyCreateobj.thankyouAddTagNonSelectedAutomation.click();
 	SurveyCreateobj.thankyouAddTagNonSelectedApply.click();
