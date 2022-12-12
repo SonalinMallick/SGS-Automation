@@ -74,7 +74,7 @@ public class Constant {
 	public static final String CHANGE_PASSWORD_UPDATE_XPATH= "//span[contains(text(),'Update')]";
 	public static final String CHANGE_PASSWORD_CANCEL_XPATH= "//button[@id='changePasswordCancelButton']";
 	public static final String CHANGE_PASSWORD_FINAL_RESULTXPATH= "//body/nav[1]/div[1]/div[2]/div[3]/ul[1]/li[2]";
-	
+	public static final String SURVEYNAME_XPATH= "//tbody/tr[8]/td[1]/a[1]";
 	public static final String DEVLOPER_OPTION_XPATH= "//a[@id='developerOptionId']";
 	public static final String COPY_API_ID_XPATH= "//button[@id='copyApiId']";
 	public static final String COPY_API_SECRET_XPATH= "//button[@id='copyApiSecret']";
@@ -549,7 +549,7 @@ public class Constant {
 	public static final String SECURE_DATABASE_XPATH="//input[@id='secureDatabase']";
 	public static final String SAVE_GENERAL_SETTINS_XPATH="//a[@id='configureSurvey']";
 	
-	public static final String ASSESSMENT_XPATH="//body/div[11]/div[2]/ul[1]/li[2]/div[1]";//"//p[contains(text(),'ASSESSMENT')]";
+	public static final String ASSESSMENT_XPATH="//body/div[11]/div[2]/ul[1]/li[2]/div[1]/a[1]/img[1]";
 	public static final String ASSESSMENT_TITLE_XPATH="//input[@id='assessmentTitle']";
 	public static final String ASSESSMENT_CREATE_XPATH="//button[@id='createSurveyBtn']";
 	public static final String ASSESSMENT_CANCEL_XPATH="//button[@id='cancelButton']";

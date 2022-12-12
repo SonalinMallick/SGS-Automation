@@ -14,6 +14,7 @@
             <class name="com.SGS.Test.SurveyCreateChoiceTest"/> 
              <class name="com.SGS.Test.SurveyCreateInteractiveTest"/>
              <class name="com.SGS.Test.SurveyCreateGroupsTest"/>
+             <class name="com.SGS.Test.MSEdgeSurveyTest"/>
 
     </classes>
   </test> <!-- Test -->

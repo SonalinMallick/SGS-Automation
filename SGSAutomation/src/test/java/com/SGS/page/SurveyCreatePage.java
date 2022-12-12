@@ -29,6 +29,9 @@ public class SurveyCreatePage {
 	@FindBy(xpath = Constant.CREATE_NEW_SURVEY_XPATH)
 	public WebElement createsurvey;
 	
+	@FindBy(xpath = Constant.SURVEYNAME_XPATH)
+	public WebElement surveyname;
+	
 	@FindBy(xpath = Constant.SIGNOUT_XPATH)
 	public  WebElement logout;
 	

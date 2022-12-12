@@ -7,9 +7,13 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -87,8 +91,53 @@ public class SurveyCreateGroupsTest extends BaseTest{
 		SurveyCreateobj.logout.click();
 	}
 	
+	@Test(priority = 1)
+	public void DuplicateAnexistingsurveyTest(Method method) {
+		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
+		driver.get("https://stg.surveygamez.com/");
+		login();
+		SurveyCreateobj.surveyname.click();
+		SurveyCreateobj.backtohome.click();
+		SurveyCreateobj.createsurveysearch.sendKeys(Constant.CREATE_TITLE_XPATH);
+		
+		logout();
+	}
 	
 	@Test(priority = 1)
+	public void createsurvey(Method method) {
+		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
+		login();
+		SurveyCreateobj.createsurvey.click();
+		SurveyCreateobj.Duplicateanexistingsurvey.click();
+		SurveyCreateobj.DuplicateanexistingsurveyTitle.clear();
+		SurveyCreateobj.DuplicateanexistingsurveyTitle.sendKeys(Constant.DUPLICATE_OF_AN_EXITING_SURVEY_TITLE);
+		SurveyCreateobj.DuplicateanexistingSelectsurvey.click();
+		SelectAutomation();
+		scrollDown();
+		SurveyCreateobj.DuplicateanexistingCreateButton.click();
+		logout();
+
+
+	}
+
+	@Test(priority = 2)
+	public void createsurveyCancelTest(Method method) {
+		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
+		login();
+		SurveyCreateobj.createsurvey.click();
+		SurveyCreateobj.Duplicateanexistingsurvey.click();
+		SurveyCreateobj.DuplicateanexistingsurveyTitle.clear();
+		SurveyCreateobj.DuplicateanexistingsurveyTitle.sendKeys(Constant.DUPLICATE_OF_AN_EXITING_SURVEY_TITLE);
+		SurveyCreateobj.DuplicateanexistingSelectsurvey.click();
+		SelectAutomation();
+		scrollDown();
+		SurveyCreateobj.DuplicateanexistingCancelButton.click();
+		logout();
+
+
+	}
+	
+	@Test(priority = 3)
 	public void DuplicateAnexistingsurveyWelcome(Method method) {
 		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
 		driver.get("https://stg.surveygamez.com/");
@@ -123,7 +172,9 @@ public class SurveyCreateGroupsTest extends BaseTest{
 		
 		logout();
 	}
-	@Test(priority = 2)
+	
+	
+	@Test(priority = 4)
 	public void pickfromothersurvey(Method method) {
 		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
 		login();
@@ -145,7 +196,7 @@ public class SurveyCreateGroupsTest extends BaseTest{
 		
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 5)
 	public void createAssessmentAutoScoredcreateTest(Method method) {
 		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
 		login();
@@ -157,7 +208,7 @@ public class SurveyCreateGroupsTest extends BaseTest{
 		logout();
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 6)
 	public void AssessmentAutoScoredCancelTest(Method method) {
 		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
 		driver.get("https://stg.surveygamez.com/");
@@ -170,7 +221,7 @@ public class SurveyCreateGroupsTest extends BaseTest{
 		logout();
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 7)
 	public void configureTest(Method method) {
 		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
 		driver.get("https://stg.surveygamez.com/");
@@ -188,7 +239,7 @@ public class SurveyCreateGroupsTest extends BaseTest{
 
 
 	
-	@Test(priority = 6)
+	@Test(priority = 8)
 	public void pickfromassessmentTest(Method method) {
 		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
 		driver.get("https://stg.surveygamez.com/");
@@ -196,8 +247,10 @@ public class SurveyCreateGroupsTest extends BaseTest{
 		SurveyCreateobj.createsurvey.click();
 		SurveyCreateobj.assessment.click();
 		scrollDown();
+		SurveyCreateobj.pickfromOtherAssessment.click();
 
 		SurveyCreateobj.pickFromOthersurveyTitle.sendKeys(Constant.DUPLICATE_OF_AN_EXITING_SURVEY_TITLE);
+		scrollDown();
 		SurveyCreateobj.pickFromOthersurveyProceed.click();
 		SurveyCreateobj.pickFromOthersurveySelectSurvey.click();
 		SurveyCreateobj.pickFromOthersurveySelectSurveyAutomation.click();
@@ -211,7 +264,7 @@ public class SurveyCreateGroupsTest extends BaseTest{
 		
 	}
 
-	@Test(priority = 7)
+	@Test(priority = 9)
 	public void createQBsTest(Method method) {
 		SurveyCreatePage SurveyCreateobj = new SurveyCreatePage(driver);
 		driver.get("https://stg.surveygamez.com/");
@@ -227,13 +280,17 @@ public class SurveyCreateGroupsTest extends BaseTest{
 		logout();
 		
 	}
-	@Test(priority = 8)
+	@Test(priority = 10)
 	public void newtabtest(Method method) {
 		driver.switchTo().newWindow(WindowType.TAB);
 		driver.navigate().to("https://stg.surveygamez.com/");
 
 		logout();
+		
+		
 	
 
 }
+	
+
 	}
